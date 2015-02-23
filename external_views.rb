@@ -3,5 +3,7 @@
 require 'sinatra'
 
 get '/index/?' do
+  @name = 'Tejas Bubane'
+  @email = 'tejasbubane@gmail.com'
   erb :index
 end
