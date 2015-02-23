@@ -5,6 +5,7 @@
 require 'sinatra'
 
 get %r{/(sp|gr)eedy} do
+  pass if request.path =~ /\/speedy/ # pass on to next matching route
   "This is speedy and greedy"
 end
 
